@@ -22,13 +22,37 @@
             <label for="txtPrice">Precio
                 <input type="number"; id="txtPrice">
             </label><br><br>
+            <label for="txtPosition">Posición
+                <input type="number"; id="txtPosition">
+            </label><br><br>
             <button type="button" id="btnAdd">Agregar</button>
+            <button type="button" id="btnDelete">Eliminar</button>
             <button type="search" id="btnSearch">Buscar</button>
+            <button type="button" id="btnList">Listar</button>
+            <button type="button" id="btnListIn">Listar inverso</button>
+            <button type="button" id="btnPosition">Insertar en poisición</button>
             <button type="reset">Cancelar</button>
         </form>
     </div>
     <div id="details">
-
+        <div class="tabla">
+            <h2>Información Producto</h2>
+            <div>
+              <table id="table">
+                <tr>
+                  <h5 id="information"></h5>
+                </tr>
+                <tr>
+                  <th>Código</th>
+                  <th>Nombre</th>
+                  <th>Cantidad</th>
+                  <th>Costo</th>
+                  <th>Valor total</th>
+                </tr>
+                
+              </table>
+            </div>
+          </div>
     </div>
 
     <script type="module" src="main.js"></script>

@@ -29,6 +29,11 @@ export default class Product{
         return this._price;
     }
 
+    getCost(){
+
+        return (this._price * this._quantity);
+    }
+
     getInfo(){
 
         return this._code + "->" + this._name;
