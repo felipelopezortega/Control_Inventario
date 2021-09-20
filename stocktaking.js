@@ -72,10 +72,10 @@ export default class Stocktaking{
 
         for (let x = 0; x < longitudDelArreglo / 2; x++){
 
-            let temporal = arreglo[x];
+            let temporal = this._stock[x];
             let indiceContrario = longitudDelArreglo - x - 1;
-            arreglo[x] = arreglo[indiceContrario];
-            arreglo[indiceContrario] = temporal;
+            this._stock[x] = this._stock[indiceContrario];
+            this._stock[indiceContrario] = temporal;
         }
 
         return this._stock
